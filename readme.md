@@ -1,7 +1,7 @@
 # Setup
 
 To use this, you must create a marvel account and obtain a public and private key via the Marvel Developer Portal: https://developer.marvel.com/.
-<br>The endpoints to use are then: <br>
+<br>The endpoints to use are: <br>
 - For the character id's: http://localhost:8080/{publickey}/{hash}/characters/
 - For details about a single character (found from id): http://localhost:8080/{publickey}/{hash}/characters/{id}
 
