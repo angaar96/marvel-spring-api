@@ -4,8 +4,6 @@ The Marvel Comics API allows developers to access information about Marvel's vas
 comics.
 We want you to use the Marvel API (see http://developer.marvel.com/) to build a Characters API:
 
-<br>
-
 ## Part One:
 
 1. Serve an endpoint **/characters** that returns all the Marvel character ids only, in a JSON
