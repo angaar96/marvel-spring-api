@@ -12,11 +12,11 @@ To obtain your hash:
 This solution also uses gson as a Maven dependency instead of Jackson to parse the JSON response from the Marvel API. 
 To implement gson, put spring.mvc.converters.preferred-json-mapper=gson into your application.properties and paste the following into your pom.xml file under dependencies:
 
-<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.8.8</version>
-</dependency>
+"<dependency>
+   <groupId>com.google.code.gson</groupId>
+   <artifactId>gson</artifactId>
+   <version>2.8.8</version>
+</dependency>"
 
 # Marvel Back End (Challenge Instructions)
 
