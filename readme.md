@@ -1,4 +1,24 @@
-# Marvel Back End
+# Setup
+
+To use this, you must create a marvel account and obtain a public and private key via the Marvel Developer Portal: https://developer.marvel.com/.
+The endpoints to use are then: 
+For the character id's: http://localhost:8080/{publickey}/{hash}/characters/
+For details about a single character (found from id): /{publickey}/{hash}/characters/{id}
+
+To obtain your hash:
+Search for an online MD5 hash generator on Google and type 1 followed by your public key and your private key. No spaces.
+This will give you your hash path variable.
+
+This solution also uses gson as a Maven dependency instead of Jackson to parse the JSON response from the Marvel API. 
+To implement gson, put spring.mvc.converters.preferred-json-mapper=gson into your application.properties and paste the following into your pom.xml file under dependencies:
+
+<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.8</version>
+</dependency>
+
+# Marvel Back End (Challenge Instructions)
 
 The Marvel Comics API allows developers to access information about Marvel's vast library of
 comics.
